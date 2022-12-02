@@ -13,10 +13,9 @@ import { persistReducer} from 'redux-persist'
     cartState : CartSlice
   })
 
+  const persistedReducer = persistReducer(persistConfig, reducer)
 
-const persistedReducer = persistReducer(persistConfig, reducer)
-
-export const store = configureStore({
-    reducer : persistedReducer
- })
- 
+  export const store = configureStore({
+      reducer : persistedReducer
+  })
+  
