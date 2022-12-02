@@ -46,6 +46,7 @@ h1,h2,h3,h4{
     background-color: rgb(224, 224, 224);
   }
 
+/* Shop */
 
 .quantity__self{
   background-color: #000;
@@ -56,20 +57,27 @@ h1,h2,h3,h4{
   border-radius: 40px;
   transform: translateY(-6px);
 }
-
-
-
-
-
-  
-
-
   .content__shop{
     display: flex;
     flex-wrap: wrap;
   }
 
 
+  .cart_total{
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+    top:50px;
+    background-color: rgb(55, 55, 55);
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: right;
+  }
+
+
+
+  /* Button */
 
   .btn{
      padding: 8px 15px;
@@ -85,16 +93,4 @@ h1,h2,h3,h4{
     opacity: 1;
   }
 
-
-
-  .cart_total{
-    width: 100%;
-    padding: 30px;
-    box-sizing: border-box;
-    position: relative;
-    top:50px;
-    background-color: rgb(55, 55, 55);
-    color: #fff;
-    font-size: 1.2rem;
-    text-align: right;
-  }
+ 

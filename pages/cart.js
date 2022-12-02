@@ -2,12 +2,12 @@ import React from 'react'
 import MainLayout from '../components/layouts/MainLayout'
 import Head from 'next/head'
 import CartItem from '../components/shop/cart/CartItem'
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector} from 'react-redux'
 function cart() {
   const cartTotalPrice = ()=>{
     let cartTotal = 0 ;
     state.cartItems.map(item=>{
-        cartTotal+= (item.price*item.quantity)
+        cartTotal+= (item.price*item.quantity) 
      })
 
      if(cartTotal){
@@ -19,6 +19,7 @@ function cart() {
  }
 
   const state = useSelector(state=>state.cartState) ;
+  
   return (
     <MainLayout>
      <Head>
