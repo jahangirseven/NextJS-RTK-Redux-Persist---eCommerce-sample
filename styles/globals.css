@@ -4,23 +4,97 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: rgb(253, 250, 250);
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
+h1,h2,h3,h4{
+  padding: 0;
+} 
 
-* {
+.content-limiter{
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+
+.app-content{
+  padding: 10px;
+}
+/* Header */
+
+.header-main .content-limiter{
+  padding: 0 10px 30px 0;
+  display: flex;
   box-sizing: border-box;
+  justify-content: space-between;
+  border-bottom:  1px solid #eee;
+}
+.nav-link{
+   padding: 5px 12px;
+   margin: 0 4px;
+   border-radius: 3px;
+   transition: 200ms;
+  }
+
+  .nav-link:hover{
+    transition: 200ms;
+    background-color: rgb(224, 224, 224);
+  }
+
+
+.quantity__self{
+  background-color: #000;
+  color: #fff;
+  padding: 4px;
+  font-size: 0.55rem;
+  display: inline-block;
+  border-radius: 40px;
+  transform: translateY(-6px);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+
+
+
+
+  
+
+
+  .content__shop{
+    display: flex;
+    flex-wrap: wrap;
   }
-  body {
-    color: white;
-    background: black;
+
+
+
+  .btn{
+     padding: 8px 15px;
+     background-color: #000;
+     color: #fff;
+     font-size: 1rem;
+     opacity: .8;
+     border-radius: 3px;
+     cursor: pointer;
   }
-}
+
+  .btn:hover{
+    opacity: 1;
+  }
+
+
+
+  .cart_total{
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+    top:50px;
+    background-color: rgb(55, 55, 55);
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: right;
+  }
